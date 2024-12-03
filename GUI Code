@@ -1,1 +1,89 @@
-#coming soon
+#uncomment screen code you want to try out
+
+"""
+
+Author:  Rachel Olsen
+Date written: 11/29/2024
+Assignment: Final Project - TableTap Gui
+Short Desc: This GUI program allows the user to manage their restaurant: Menu items and prices can be added, table layout can be adjusted, servers can clock in, enter customer orders, print customer checks, and apply payments to customer bills.
+"""
+
+
+
+import tkinter as tk
+
+root = tk.Tk()
+
+#set the title
+root.title('TableTap')
+
+#set the root window size
+root.geometry('800x600+250+50')
+root.resizable(False, False)
+
+'''
+#Main Login
+#making and arranging widgets
+title = tk.Label(root, text = 'Welcome to \n TABLETAP', font = 'Ariel 16 bold')
+title.grid(row = 0, rowspan= 2, columnspan = 2, sticky = 'NSEW')
+
+login_frame = tk.Frame(root)
+login_frame.grid(row = 3, column = 0, sticky = 'NSEW')
+
+#login option buttons
+login_manager_btn = tk.Button(login_frame, text = 'Manager Login')
+login_manager_btn.pack()
+
+server_clockin_btn = tk.Button(login_frame, text = 'Server Clock In')
+server_clockin_btn.pack()
+'''
+
+'''
+#Manager Login Screen
+#making and arranging widgets
+enter_pin_label = tk.Label(root, text = 'Enter Your Pin')
+enter_pin_label.grid(columnspan = 2)
+
+enter_pin_inp = tk.Entry(root)
+enter_pin_inp.grid()
+
+login_btn = tk.Button(root, text = 'Login')
+login_btn.grid()
+'''
+
+'''
+#Server Clock In Screen
+#making and arranging widgets
+enter_pin_label = tk.Label(root, text = 'Enter Your Pin')
+enter_pin_label.grid(columnspan = 2)
+
+enter_pin_inp = tk.Entry(root)
+enter_pin_inp.grid()
+
+login_btn = tk.Button(root, text = 'Clock In')
+login_btn.grid()
+'''
+
+'''
+#Manager Main Menu
+#making and arranging widgets
+manager_main_menu_title = tk.Label(root, text = 'Manage Your Restaurant', font = 'Ariel 16 bold')
+manager_main_menu_title.grid()
+
+#main menu buttons
+menu_items_btn = tk.Button(root, text = 'Menu Items', font = 'Ariel 12')
+menu_items_btn.grid(pady = 5)
+
+see_clockins_btn = tk.Button(root, text = 'Server Clock-ins', font = 'Ariel 12')
+see_clockins_btn.grid(pady = 5)
+
+server_screen_layout_btn = tk.Button(root, text = 'Server Screen Layout', font = 'Ariel 12')
+server_screen_layout_btn.grid(pady = 5)
+
+manager_logout_btn = tk.Button(root, text = 'Log Out', font = 'Ariel 9')
+manager_logout_btn.grid(row = 6, pady = 20)
+'''
+
+root.mainloop()
+
+
